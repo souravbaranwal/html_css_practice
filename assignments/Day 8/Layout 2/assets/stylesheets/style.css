@@ -108,10 +108,10 @@ img {
 /* === footer === */
 footer {
   background: black;
+  padding: 20px;
 }
 .footer-text {
   color: white;
-  padding: 20px;
 }
 
 
