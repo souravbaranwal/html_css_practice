@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Styles Conference</title>
+	<link rel="stylesheet" href="assets/stylesheets/style.css">
+</head>
+
+<!-- === body === -->
+
+	<body>
+		<!-- === section === -->
+		<section>
+
+			<!-- === section part 1 === -->
+			<h1>Side-By-Side Positioning Demo</h1>
+			<div class="in-b">
+				These two divs are positioned next to one another using <code>display: inline-block</code>
+			</div>
+			<div class="in-b">
+				Notice the space between them.It occurs because of my carriage return in the HTML which I've used to keep the code
+				organised.I've used reset to ensure no elements should have any default margins or padding. (I did add a
+				bottommargin to make it easier to read) This space is actually a space character rendered just as it would be
+				between two inline elements
+			</div>
+
+			<br>
+
+			<!-- === section part 2 === -->
+
+			<div class="float-left">These two are positioned using <code>float: left.</code></div>
+			<div class="float-left">You can see that,even though the elements are spacd in the code, the space is not actually
+				rendered on the page. This may not be a huge deal in these first examples,but...</div>
+
+			<br>
+
+			<!-- === section part 3 === -->
+			<div class="in-b width-50">What if I want my Side-By-Side elements to take up the full width of the parent element ?
+				I can set the width of each to 50%, right?</div>
+			<div class="in-b width-50">Wrong ! because, together the two inline block elements will add up to 100 % of the
+				availabe width but that doesn't account for the space between.</div>
+			<br>
+
+			<!-- === section part 3 === -->
+			<div class="float-left width-50">If I do the same thing with floated elements...</div>
+			<div class="float-left width-50">The two elements are Side-By-Side just as I intended and fill the center width of
+				the parent (which , in this case, is the same as the width of the viewport.)</div>
+		</section>
+
+	</body>
+
+</html>
