@@ -1,0 +1,171 @@
+:root {
+  --text-color: #212931;
+  --text-color2: #fff;
+  --bg-color: #1e252d;
+  --accent-color: #18bfef;
+  font-size: 16px; }
+
+/*=======================================*/
+/*  CSS Resets  */
+/*=======================================*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*=======================================*/
+/*  Base CSS   */
+/*=======================================*/
+h1 {
+  font-size: 6.5rem;
+  line-height: 1.5; }
+
+h2 {
+  font-size: 4rem;
+  line-height: 1.5; }
+
+h3 {
+  font-size: 3rem;
+  line-height: 1.5; }
+
+h4 {
+  font-size: 2rem;
+  line-height: 1.5; }
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.5; }
+
+h6 {
+  font-size: 0.6rem;
+  line-height: 1.5; }
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.5; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+/*=======================================*/
+/* General CSS  */
+/*=======================================*/
+body {
+  background-color: #757575; }
+
+.container {
+  width: 100%;
+  margin: 0 auto; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+/*=======================================*/
+/*  Navigation */
+/*=======================================*/
+.header {
+  background-color: var(--bg-color);
+  padding: 1rem;
+  line-height: 1rem; }
+  .header .navbar {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 3rem 20rem; }
+    .header .navbar i {
+      font-size: 3rem; }
+    .header .navbar h4 {
+      color: var(--text-color2); }
+
+/*=======================================*/
+/*  Hero */
+/*=======================================*/
+.hero {
+  background-image: url(../media/cat_m3_cat_outside_1.jpg);
+  max-width: 100%;
+  padding: 1.8rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 320px;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr auto; }
+  .hero h1, .hero p {
+    align-self: center;
+    color: var(--text-color2);
+    margin: 1rem; }
+
+/*=======================================*/
+/*  Portfolio */
+/*=======================================*/
+.portfolio {
+  background: white;
+  padding: 1.8rem 1.8rem 5rem 1.8rem; }
+
+/*=======================================*/
+/*  Media Query  */
+/*=======================================*/
+@media all and (max-width: 992px) {
+  /* === Hero === */
+  .hero {
+    grid-template-columns: 1fr; } }
+
+/*# sourceMappingURL=style.css.map */
